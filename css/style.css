@@ -1,4 +1,4 @@
-body {
+.bodyInit {
   background-color: #3c3c43;
 }
 
@@ -31,6 +31,15 @@ body {
   border: none;
   border-bottom: 1px solid #c8c8c8;
   background-color: #f4ac04;
+  box-shadow: none;
+}
+
+input:valid:hover {
+  border: 2px solid rgba(0, 128, 0, 0.580);
+}
+
+input:invalid:hover {
+  border: 2px solid rgba(255, 0, 0, 0.580);
 }
 
 .styleButton {
@@ -39,6 +48,11 @@ body {
   color: #3c3c43;
   border: none;
   font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.styleButton:hover {
+  background-color: #f4ac0488;
+  color: #3c3c43;
 }
 
 .text1 {
@@ -56,6 +70,62 @@ body {
   display: inline-block;
 }
 
-.foot {
+footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
   text-align: center;
+}
+
+.divMenu {
+  margin-top: 40%;
+  padding: 1.5rem;
+}
+
+.btn-menu {
+  background-color: #f4ac04;
+  color: white;
+  border-radius: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.bodyMenu {
+  background-color: #dcdce4;
+}
+
+.divNavbar {
+  background-color: #3c3c43;
+  width: 100%;
+  padding: -0.5rem -1rem
+}
+
+.navbar-toggler {
+  display: inline-block;
+}
+
+.navbar-text {
+  margin-left: 5rem;
+  color: #dcdce4;
+  font-weight: bolder;
+  display: inline;
+}
+
+.navbarStyle {
+  background-color: white;
+}
+
+.fa-bars {
+  color: #dcdce4;
+}
+
+button.navbar-toggler:active {
+  color: #f4ac04;
+}
+
+.nav-link {
+  color: #f4ac04;
+}
+
+.collapse {
+  color: #3c3c43;
 }
