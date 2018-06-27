@@ -1,1 +1,3 @@
-/* Holiii acá va tu código también */
+window.onload = () => {
+  callBip(19420273);
+}
