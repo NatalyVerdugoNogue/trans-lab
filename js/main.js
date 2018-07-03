@@ -45,3 +45,10 @@ const IngresarNumTarjeta = () => {
     value2.innerHTML = numTarjeta2;
     value3.innerHTML = numTarjeta3;
 }
+
+const obtenerNumTarjeta = () => {
+
+    let numTarjeta = localStorage.getItem('Tarjeta1');
+    console.log(numTarjeta);
+
+}

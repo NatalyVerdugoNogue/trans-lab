@@ -66,7 +66,7 @@ const writeResidue = () => {
         <option id="value2" value="2">Two</option>
         <option id="value3" value="3">Three</option>
       </select>
-      <button type="button" onclick="" id="btnSaldo" class="btn btn-light btn-lg btn-block btn-menu">VER SALDO</button>
+      <button type="button" onclick="obtenerNumTarjeta()" id="btnSaldo" class="btn btn-light btn-lg btn-block btn-menu">VER SALDO</button>
     </div>
   </div>
 </div>`
