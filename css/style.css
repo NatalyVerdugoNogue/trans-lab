@@ -112,6 +112,7 @@ footer {
 
 .navbarStyle {
   background-color: white;
+  padding: 0;
 }
 
 .fa-bars {
@@ -128,4 +129,17 @@ button.navbar-toggler:active {
 
 .collapse {
   color: #3c3c43;
+}
+
+.navBtn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navText {
+  font-size: 1.4rem;
+}
+
+li {
+  list-style: none;
 }
