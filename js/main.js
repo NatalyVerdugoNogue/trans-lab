@@ -30,3 +30,18 @@ const validInput = (inputEmail, inputPassword) => {
     return valid;
 }
 
+
+const IngresarNumTarjeta = () => {
+    let numTarjeta1 = document.getElementById('numTarjeta1').value;
+    let numTarjeta2 = document.getElementById('numTarjeta2').value;
+    let numTarjeta3 = document.getElementById('numTarjeta3').value;
+    localStorage.setItem('Tarjeta1', numTarjeta1);
+    localStorage.setItem('Tarjeta2', numTarjeta2);
+    localStorage.setItem('Tarjeta3', numTarjeta3);
+    let value1 = document.getElementById('value1');
+    let value2 = document.getElementById('value2');
+    let value3 = document.getElementById('value3');
+    value1.innerHTML = numTarjeta1;
+    value2.innerHTML = numTarjeta2;
+    value3.innerHTML = numTarjeta3;
+}

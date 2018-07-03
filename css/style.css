@@ -34,11 +34,11 @@
   box-shadow: none;
 }
 
-input:valid:hover {
+input.contorno:valid:hover {
   border: 2px solid rgba(0, 128, 0, 0.580);
 }
 
-input:invalid:hover {
+input.contorno:invalid:hover {
   border: 2px solid rgba(255, 0, 0, 0.580);
 }
 
