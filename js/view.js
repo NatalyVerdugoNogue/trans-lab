@@ -57,17 +57,19 @@ const writeResidue = () => {
       <div class="input-group mb-3">
         <input id="numTarjeta3" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
       </div>
-      <button type="button" onclick="IngresarNumTarjeta()" id="btnTarjetasCarga" class="btn btn-light btn-lg btn-block btn-menu">CARGAR TARJETAS</button>
+      <button type="button" onclick="IngresarNumTarjeta()" id="btnTarjetasCarga" class="btn btn-light btn-lg btn-block btn-menu">INGRESAR TARJETAS</button>
 
 
-      <select class="custom-select">
+      <select id="selectTarjeta" class="custom-select">
         <option selected>Open this select menu</option>
-        <option id="value1" value="1">One</option>
-        <option id="value2" value="2">Two</option>
-        <option id="value3" value="3">Three</option>
+        <option id="value1" >One</option>
+        <option id="value2" >Two</option>
+        <option id="value3" >Three</option>
       </select>
       <button type="button" onclick="obtenerNumTarjeta()" id="btnSaldo" class="btn btn-light btn-lg btn-block btn-menu">VER SALDO</button>
     </div>
   </div>
 </div>`
+
+  escribirDatosLocal();
 }

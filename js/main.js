@@ -9,9 +9,6 @@ window.onload = () => {
         }
 
     })
-
-    callBip(19420273);
-
 }
 
 const validInput = (inputEmail, inputPassword) => {
@@ -41,14 +38,28 @@ const IngresarNumTarjeta = () => {
     let value1 = document.getElementById('value1');
     let value2 = document.getElementById('value2');
     let value3 = document.getElementById('value3');
-    value1.innerHTML = numTarjeta1;
-    value2.innerHTML = numTarjeta2;
-    value3.innerHTML = numTarjeta3;
+    let numTarjetaValue1 = localStorage.getItem('Tarjeta1');
+    let numTarjetaValue2 = localStorage.getItem('Tarjeta2');
+    let numTarjetaValue3 = localStorage.getItem('Tarjeta3');
+    value1.innerHTML = numTarjetaValue1;
+    value2.innerHTML = numTarjetaValue2;
+    value3.innerHTML = numTarjetaValue3;
 }
 
 const obtenerNumTarjeta = () => {
 
-    let numTarjeta = localStorage.getItem('Tarjeta1');
-    console.log(numTarjeta);
+    let selectTarjeta = document.getElementById('selectTarjeta').value;
+    let numSelectTarjeta = parseInt(selectTarjeta)
 
+    callBip(numSelectTarjeta);
+    // 19420273
+}
+
+const escribirDatosLocal = () => {
+    let numTarjetaValue1 = localStorage.getItem('Tarjeta1');
+    let numTarjetaValue2 = localStorage.getItem('Tarjeta2');
+    let numTarjetaValue3 = localStorage.getItem('Tarjeta3');
+    value1.innerHTML = numTarjetaValue1;
+    value2.innerHTML = numTarjetaValue2;
+    value3.innerHTML = numTarjetaValue3;
 }
